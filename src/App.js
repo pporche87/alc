@@ -5,6 +5,7 @@ import Features from './components/Features';
 import Services from './components/Services';
 import Stories from './components/Stories';
 import Contact from './components/Contact';
+import './public/css/style.css';
 
 class App extends PureComponent {
   constructor(props) {
@@ -21,7 +22,7 @@ class App extends PureComponent {
   renderNavigation = () => (
     <div className="navigation">
       <input type="checkbox" className="navigation__checkbox" id="navi-toggle" />
-      <label for="navi-toggle" className="navigation__button">
+      <label htmlFor="navi-toggle" className="navigation__button">
         <span className="navigation__icon">&nbsp;</span>
       </label>
       <div className="navigation__background">&nbsp;</div>

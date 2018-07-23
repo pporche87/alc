@@ -10,7 +10,7 @@ class Stories extends PureComponent {
   render = () => (
     <section className="section-stories">
       <div className="bg-video">
-        <video className="bg-video__content" autoplay muted loop>
+        <video className="bg-video__content" autoPlay muted loop>
           <source src="img/Playful_Sunday.mp4" type="video/mp4" />
           <source src="img/Playful_Sunday.webm" type="video/webm" />
             Your browser is not supported!
@@ -44,7 +44,7 @@ class Stories extends PureComponent {
         </div>
       </div>
       <div className="u-center-text u-margin-top-huge">
-        <a href="#" class="btn-text">Read more stories &rarr;</a>
+        <a href="#" className="btn-text">Read more stories &rarr;</a>
       </div>
     </section>
   );
