@@ -1,10 +1,15 @@
 import React, { PureComponent } from 'react';
+import { imageTest } from '../public/img/nut-1.jpg';
 
 class About extends PureComponent {
   constructor(props) {
     super(props);
 
     this.state = {};
+  }
+
+  componentDidMount = () => {
+    console.log('imageTest=======>', imageTest);
   }
 
   render = () => (
@@ -29,9 +34,9 @@ class About extends PureComponent {
         </div>
         <div className="col-1-of-2">
           <div className="composition">
-            <img src="img/nut-1.jpg" alt="Photo 1" className="composition__photo composition__photo--p1" />
-            <img src="img/nut-2.jpg" alt="Photo 2" className="composition__photo composition__photo--p2" />
-            <img src="img/nut-3.jpg" alt="Photo 3" className="composition__photo composition__photo--p3" />
+            <img src={require('../public/img/nut-1.jpg')} alt="Photo 1" className="composition__photo composition__photo--p1" />
+            <img src={require('../public/img/nut-2.jpg')} alt="Photo 2" className="composition__photo composition__photo--p2" />
+            <img src={require('../public/img/nut-3.jpg')} alt="Photo 3" className="composition__photo composition__photo--p3" />
           </div>
         </div>
       </div>

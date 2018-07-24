@@ -11,8 +11,8 @@ class Stories extends PureComponent {
     <section className="section-stories">
       <div className="bg-video">
         <video className="bg-video__content" autoPlay muted loop>
-          <source src="img/Playful_Sunday.mp4" type="video/mp4" />
-          <source src="img/Playful_Sunday.webm" type="video/webm" />
+          <source src={require("../public/img/Playful_Sunday.mp4")} type="video/mp4" />
+          <source src={require("../public/img/Playful_Sunday.webm")} type="video/webm" />
             Your browser is not supported!
         </video>
       </div>
@@ -22,7 +22,7 @@ class Stories extends PureComponent {
       <div className="row">
         <div className="story">
           <figure className="story__shape">
-            <img src="img/brennan.jpg" alt="picture of customer" className="story__img" />
+            <img src={require("../public/img/brennan.jpg")} alt="picture of customer" className="story__img" />
             <figcaption className="story__caption">Brennan Rose</figcaption>
           </figure>
           <div className="story__text">
@@ -34,7 +34,7 @@ class Stories extends PureComponent {
       <div className="row">
         <div className="story">
           <figure className="story__shape">
-            <img src="img/patrick.png" alt="picture of customer" className="story__img" />
+            <img src={require("../public/img/patrick.png")} alt="picture of customer" className="story__img" />
             <figcaption className="story__caption">Patrick Porche</figcaption>
           </figure>
           <div className="story__text">
