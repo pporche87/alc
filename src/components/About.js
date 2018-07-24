@@ -8,10 +8,6 @@ class About extends PureComponent {
     this.state = {};
   }
 
-  componentDidMount = () => {
-    console.log('imageTest=======>', imageTest);
-  }
-
   render = () => (
     <section className="section-about">
       <div className="u-center-text u-margin-bottom-big">
